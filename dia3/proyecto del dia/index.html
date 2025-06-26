@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto del dia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload="comenzarJuego()">
+    <h1>bienvenido a este juego de preguntas</h1>
+    <p>debes responder las preguntas en maximo 30 segundos</p>
+    <p>
+        si lo respondes completando las preguntas has ganado y mostrara las respuestas
+        sino te mostrará un game over... mucha suerte
+    </p>
+
+
+             <h1  id="textoAlarma"> 30</h1>
+    
+            <p for="pP">1.cual es tu nombre</p>
+            <input type="text"  id="pP"><br><br>
+              <p for="sP">2.cual es tu apellido</p>
+            <input type="text"  id="sP"><br><br>
+              <p for="tP">3.cual es tu edad</p>
+            <input type="text"  id="tP"><br><br>
+              <p for="cP">4.cual es tu profesion </p>
+            <input type="text"  id="cP"><br><br>
+              <p for="qP">5.cual es tu hobby favorito</p>
+            <input type="text"  id="qP">
+            <audio id="tiempoAudio" src="gameover.mp3" type="mpeg">este es un audio</audio>
+
+            <button onclick="acabe()">listo</button>
+            <button onclick="reiniciar()">reiniciar</button>
+
+            
+
+
+            <script>
+                let sonidoAudio = document.getElementById("tiempoAudio");
+                let tiempoCumplido = document.getElementById("textoAlarma");
+                let tiempoTerminado;
+                let intervaloDeTiempo;
+                
+
+              function  comenzarJuego(){
+                 tiempoTerminado =   setTimeout(completarPreguntas,1000*30);
+                  intervaloDeTiempo =  setInterval(tictac,1000);
+                  tiempoCumplido.textContent = 30;
+                }
+
+            function tictac() {
+                  let tiempo = tiempoCumplido.textContent;
+
+                  tiempoCumplido.textContent = tiempo-1;
+            }   
+
+
+            function completarPreguntas() {
+                clearInterval(intervaloDeTiempo);
+                alert("game over... se acabo el tiempo");
+                tiempoCumplido.textContent=0;
+               sonidoAudio.play();  
+            }
+
+
+
+         function acabe(){
+            clearInterval(intervaloDeTiempo);
+            clearTimeout(tiempoTerminado);
+
+                let pPregunta= document.getElementById("pP").value;
+                let sPregunta= document.getElementById("sP").value;
+                let tPregunta= document.getElementById("tP").value;
+                let cPregunta= document.getElementById("cP").value;
+                let qPregunta= document.getElementById("qP").value;
+                let fechaH =  new Date().toLocaleDateString("es-ES");
+
+               alert (fechaH + "\n " +
+                    pPregunta + " \n " +
+                    sPregunta +" \n " + 
+                    tPregunta +" \n " + 
+                    cPregunta +" \n " +
+                     qPregunta
+
+            )
+
+         }
+
+      
+
+
+
+                function reiniciar() {
+                    location.reload();
+                }
+
+
+
+            </script>
+    
+
+
+</body>
+</html>

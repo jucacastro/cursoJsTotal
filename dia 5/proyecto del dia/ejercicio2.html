@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="edadUsuario" type="number">
+<button onclick="mostrarEdad()">Mostrar edad</button>
+<p id="resultado"></p>
+
+<script>
+
+
+function mostrarEdad() {
+  let edadInput = document.getElementById("edadUsuario"); // 👉 obtenemos el elemento UNA VEZ
+let resultado = document.getElementById("resultado");
+
+  let edad = edadInput.value; // 👉 cada vez tomamos el valor actualizado
+  resultado.textContent = "Tu edad es: " + edad;
+}
+</script>
+</body>
+</html>

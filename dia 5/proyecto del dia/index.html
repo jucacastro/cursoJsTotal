@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto del dia</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Bienvenido al software sugerencias de peliculas</h1><br>
+    <p>en esta pagina pones tu edad y el genero que te gusta </p>
+    <p>de esta manera podremos recomendar la pelicula con base a estos datos</p><br>
+    <h3>ingresa tu edad</h1>
+    <input type="number" id="edadUsuario"><br>
+    <h3>ingresa el genero que te gustaria ver</h1>
+        <button onclick="recomendar('comedia')">Comedia</button>
+        <button onclick="recomendar('drama')">Drama</button>
+        <button onclick="recomendar('musical')">musical</button>
+        <button onclick="recomendar('crimen')">crimen</button>
+
+
+        <h1>nuestra recomendación</h1>
+
+        <h1 id="recomendacionPelicula"></h1>
+
+
+    
+</body>
+</html>

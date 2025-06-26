@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   height: 400px;
+    width: 600px;/* Opcional, pero recomendado */
+}
+
+.container{
+   height: 100%;
+   width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 4px;
+   background-color: bisque;
+   border-radius: 10px; 
+
+
+}
+
+.numero-ingreso input{
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.operaciones{
+    background-color: burlywood;
+    border-style: dashed;
+    padding: 10px;
+    margin-bottom: 5px;
+
+
+}
+
+.operaciones button{
+    background-color: burlywood;
+    font-family: monospace;
+}
+
+.resultado{
+    font-size: x-large;
+    font-family: monospace;
+    background-color: burlywood;
+     border-style: dashed;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+
+.resultado button{
+      font-family: monospace;
+}
+
+

@@ -1,0 +1,10 @@
+.calculo{
+    font-family: monospace;
+    background-color: rgb(226, 181, 181);
+}
+
+.resultado{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    font-size: xx-large;
+}

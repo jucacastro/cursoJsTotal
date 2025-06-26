@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de Números</title>
+</head>
+<body>
+    <p>Escribe un número:</p>
+    <input type="number" id="pNumero"><br>
+    <p>Escribe otro:</p>
+    <input type="number" id="sNumero"><br>
+    <button onclick="result()">¡Suma!</button>
+
+    <h1>La suma es: <span id="resultado">?</span></h1>
+
+    <script>
+        function result() {
+            // Obtener valores y convertirlos a número
+            let num1 = parseInt(document.getElementById("pNumero").value);
+            let num2 =parseInt(document.getElementById("sNumero").value);
+
+            // Calcular suma
+            let suma = num1 + num2;
+
+            // Mostrar resultado
+            document.getElementById("resultado").textContent = suma;
+        }
+    </script>
+</body>
+</html>

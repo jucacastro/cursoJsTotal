@@ -1,0 +1,9 @@
+h1{
+    font-family: monospace;
+    font-size:70px;
+    color: red;
+}
+
+h1::first-letter{
+    color: black;
+}

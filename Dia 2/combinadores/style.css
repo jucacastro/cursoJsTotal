@@ -1,0 +1,16 @@
+div p {
+    color:green;
+}
+
+ul > li {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 ~ h3{
+    background-color: lightblue;
+}
+
+div p[align="left"]:hover{
+    background-color: gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

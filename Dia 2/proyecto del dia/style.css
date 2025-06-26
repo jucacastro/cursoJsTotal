@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  /* Importante para incluir padding y border en el ancho/altura */
+background-color: bisque;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 4px;border-style: solid;
+    background-color: rgb(190, 121, 31);
+    padding: 2px;
+    width: 100%;
+}
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+.main{
+    text-align: justify;
+    border: 4px;border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.imagen1 {
+    width: 40%;
+    margin: 20px auto; /* centra el contenedor */
+}
+
+.imagen1 img {
+    display: block ;
+    margin: 0 auto;     /* centra la imagen */
+    width: 100%;
+    height: auto;
+    border: 4px;
+    border-radius:4px ;
+    border-style: solid;
+}
+.imagen1 img:hover{
+    border-color: red;
+    transition:1s;
+}
+
+.imagen-2 {
+   width: 40%;
+    margin: 20px auto;  /* centra el contenedor */
+
+}
+
+.imagen-2 img {
+    display: block;
+    margin: 0 auto;     /* centra la imagen */
+    width: 100%;
+    height: auto;
+    border: 4px;
+    border-radius:4px ;
+    border-style: solid;
+}
+.imagen-2 img:hover{
+    border-color: red;
+    transition:1s;
+}
+
+span:hover{
+    color: rgb(231, 19, 19);
+    font-size: larger;
+}
+
+#link1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    border: 4px; border-style: solid;
+
+}
+
+#link1 a:hover{
+    color: red;
+    background-color: black;
+
+}
+
+#imagen-3 {
+    width: 40%;
+    margin: 20px auto; /* centra el contenedor */
+    margin-bottom: 40px;
+    
+}
+
+
+#imagen-4 {
+   width: 40%;
+    margin: 20px auto;  /* centra el contenedor */
+}
+
+.footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    border: 4px; border-style: solid;
+    
+}
+
+.footer p:hover{
+    color: red;
+    background-color: black;
+
+}
+.footer a:hover{
+    color: red;
+    background-color: black;
+
+}
+

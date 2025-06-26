@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(154, 135, 110);
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    padding: 2px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+
+}
+
+h1{
+    text-align: center;
+    font-family: monospace;
+}
+
+#textoAlarma:hover{
+color:red;
+font-size: xxx-large;
+}
+

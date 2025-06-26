@@ -1,0 +1,43 @@
+
+    body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  height: 100vh;
+  width: 1000%;
+}
+
+.encabezado{
+    height: 40px;
+    width: 300px;
+    background-color: grey;
+    margin: 30px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-family: monospace;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+}
+
+.encabezado h1{
+    text-align: center;
+    
+}
+
+
+.barraLateral{
+height: 40px;
+    width: 300px;
+    background-color: grey;
+    margin: 30px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-family: monospace;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+}
+  
