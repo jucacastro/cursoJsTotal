@@ -1,0 +1,25 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    font-family: monospace;
+    color: rgb(100, 35, 35);
+}
+
+p{
+    font-family: monospace;
+    color: brown;
+}
+
+li{
+    font-family: monospace;
+    color: rgb(115, 76, 76);
+}
+
+button{
+ background-color: rgb(114, 60, 60);
+ color: white;
+ border-radius: 4px;
+ position: inherit;
+}
