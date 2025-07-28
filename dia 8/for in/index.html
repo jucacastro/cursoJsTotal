@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    <script>
+      function Perro(raza,edad,color) {
+        this.patas = 4;
+        this.raza = raza;
+        this.edad = edad;
+        this.ladrar = function () {
+            console.log("guau");
+        }
+        this.color = color;
+
+
+      }
+
+      let simba = new Perro("doberman",10,"negro");
+      let kiara = new Perro("caniche",14,"cafe");
+      let batu = new Perro("criollo",5,"marron");
+
+
+      for (const caracteristicas in batu) {
+        console.log(caracteristicas + ":"+batu[caracteristicas]);
+            
+        }
+      
+    </script>
+    
+</body>
+</html>

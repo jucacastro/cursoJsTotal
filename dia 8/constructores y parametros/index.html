@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    <script>
+ function perro(raza,edad) {
+    this.pata = 4;
+    this.ladrar = function () {
+        console.log("guau");
+    }
+    this.raza = raza;
+    this.edad = edad;
+ }
+ let kiara = new perro ("doberman",10);
+
+
+
+    function Empleado(nombre,apellido,edad,cargo) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.cargo = cargo;
+        this.presentarse = function () {
+            console.log(`hola mi nombre es ${this.nombre} ${this.apellido} y mi cargo es ${this.cargo}`);
+            
+        }
+    }
+
+    let empleado1 = new Empleado("juan carlos","castro",29,"gerente general");
+    </script>
+    
+</body>
+</html>

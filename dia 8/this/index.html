@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+</head>
+<body>
+    <script>
+ let perro = {
+            nombre:"simba", raza: "criollo",edad:4,
+            ladrar(){
+                alert("guau");
+            },
+            saludar(){
+                console.log("hola mi nombre es"+this.nombre);
+            }
+        };
+
+
+ let perro2 = {
+            nombre:"kiara", raza: "criollo",edad:8,
+            ladrar(){
+                alert("guau");
+            },
+            saludar(){
+                console.log("hola mi nombre es"+this.nombre);
+            }
+        };
+
+
+        let animales=["perro","gato","cerdo","pajaro"];
+        let posicionAnimal = 0;
+
+        for (const animal of animales) {
+            console.log("animal "+posicionAnimal+ "es : " +animal);
+            posicionAnimal++
+        }
+
+
+    </script>
+    
+</body>
+</html>
